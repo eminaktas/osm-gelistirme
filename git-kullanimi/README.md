@@ -1,7 +1,7 @@
 ## [OSM Geliştirme - Ana sayfa](../README.md)
 # OSM Gerrit ortamında git kullanımı
 
-OSM ortamında diğer Github ve Gitlab'dan farklı olarak master branch üzerinden çalışılmaktadır. Kendi bilgisayarında kod geliştirme yapılırken modülün indirilmesi, lokal branch açma, kodu commit etme, kodun master branch'e gönderilmesi (push) ve gönderilen commit'in güncellenmesi adımlarındna bahsedilmiştir.
+OSM ortamında diğer Github ve Gitlab'dan farklı olarak master branch üzerinden çalışılmaktadır. Kendi bilgisayarında kod geliştirme yapılırken modülün indirilmesi, lokal branch açma, kodu commit etme, kodun master branch'e gönderilmesi (push) ve gönderilen commit'in güncellenmesi adımları bu sayfada bahsedilmektedir.
 
 ## OSM Modül inidirilmesi
 
@@ -126,3 +126,6 @@ Diğer bir yöntem ise `git log` ile görüntülenebilir.
 
 Kod göndermek için farklı olarak `git review` kullanılmaktadır. Bu [bağlantı](https://osm.etsi.org/docs/developer-guide/05-git-review.html) üzerinden rehbere erişebilirsin.
 
+OSM topluluğu tarafından hazırlanan `git` ve `git review` rehberleri:
+- https://osm.etsi.org/docs/developer-guide/04-merge-conflicts.html
+- https://osm.etsi.org/docs/developer-guide/05-git-review.html
