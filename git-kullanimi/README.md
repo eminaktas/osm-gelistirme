@@ -94,5 +94,34 @@ Bu adımlar tamamlandıktan sonra artık kod gönderilmeye hazırdır.
 git push origin HEAD:refs/heads/master
 ```
 
+Daha sonrasında yapılan commit güncellenmek istenilirse aşağıdaki adımlar gerçekleştirilebilir.
+
+Değişiklik yaptığınız mevcut branch duruyorsa yukarıdaki bahsedilen adımlar aynı şekilde gerçekleştirilebilir. Tek fark olarak `git commit -s -m "Örnek mesaj"` adımı uygulanmaz. 
+
+Eğer değişiklik yapılan branch yerelde bulunmuyorsa bu adımları uygula
+
+```bash
+# Öncelikle yerel bir branch oluştur.
+git checkout origin/master -b guncelleme
+# Ardından cherry-pick yapılır. Böylece commitin olduğu gibi oluşturduğu branche geçer.
+git fetch <url> <ref> && git cherry-pick FETCH_HEAD
+```
+
+Cherry-Pick komutu için aşağıdaki ekran görüntüsünde görüldüğü gibi önce Gerrit üzerinden bir commit açılır. Download üzerine çıktıktan sonra açılan pop-up ekranından cherry-pick bağlantısı kopyalanır ve komut çalıştırılır. 
+
+![cherry pick](ekran-goruntuleri/cherry-pick.png)
+
+Ayrıca, `Checkout` altında belirtilen komutta kullanılabilir. Bu komut geçici bir branch oluşturur. Bu oluşan branchten farklı branche geçiş sağlandığında branch yok olur. Fakat bu branchte değişiklik yaptığında eğer commit edilmediyse commit etmen için sana uyarı verecektir. Bu commitleri kaybetmemek için commit numarasının ilk 7 basamağını kullanarak branch oluşturulabilir.
+```bash
+git branch <yeni-branch-ismi> <commit-numarasının-ilk-7-hanesi>
+```
+Commit numarası commit işlemi yapıldıktan sonra çıktıda görülebilir. Ekran görüntüsünde görülen `f81eff6`
+
+![commit numarası](ekran-goruntuleri/git-commit-numara.png)
+
+Diğer bir yöntem ise `git log` ile görüntülenebilir.
+
+![commit numarası](ekran-goruntuleri/git-log-commit-numara.png)
+
 Kod göndermek için farklı olarak `git review` kullanılmaktadır. Bu [bağlantı](https://osm.etsi.org/docs/developer-guide/05-git-review.html) üzerinden rehbere erişebilirsin.
 
