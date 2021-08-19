@@ -1,3 +1,4 @@
+## [OSM Geliştirme - Ana sayfa](../README.md)
 # OSM Gerrit ortamında git kullanımı
 
 OSM ortamında diğer Github ve Gitlab'dan farklı olarak master branch üzerinden çalışılmaktadır. Kendi bilgisayarında kod geliştirme yapılırken modülün indirilmesi, lokal branch açma, kodu commit etme, kodun master branch'e gönderilmesi (push) ve gönderilen commit'in güncellenmesi adımlarındna bahsedilmiştir.
