@@ -1,6 +1,6 @@
 ## [OSM Geliştirme - Ana sayfa](../README.md)
 
-# Test etme
+# Test edilmesi
 
 Yapılan geliştirmenin doğruluğunu ve hatasız çalıştığını test etmek için birim testler geliştirilebilir veya bir geliştirme ortamında modülü yeniden inşa edilebilir.
 
