@@ -12,6 +12,6 @@ OSM için Git kullanımı [burada](git-kullanimi/README.md) anlatılmıştır.
 
 OSM modülleri için geliştirme ortamların hazırlanması [burada](ortam-hazirlanmasi/README.md) anlatılmıştır.
 
-## Hata ayıklama
+## Test etme
 
-OSM modüllerinde hata ayıklama işlemleri [burada](hata-ayiklama/README.md) anlatılmıştır.
+OSM modüllerinde yapılan geliştirmelerin test edilmesi ve bu sayede hata ayıklanması [burada](test-etme/README.md) anlatılmıştır. Ayrıca, LCM modülü için Docker yansı oluşturulması ve bu yanısın K8s nesnesinde değiştirilmesinden de bahsedilmektedir.
