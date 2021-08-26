@@ -118,7 +118,7 @@ LCM modülünün Docker yanısının tekrar inşa etmek için tüm gerekli paket
 # LCM modülünün yeni imajının kurulumu aşağıdaki komut ile gerçekleştirilir.
 # Eğer web sunucu ve Docker aynı makinada yer alıyorsa ip kısmı `localhost` olarak kalabilir.
 export DOCKER_TAG=dev
-docker build -t opensourcemano/lcm:${DOCKER_TAG} \
+docker build --no-cache -t opensourcemano/lcm:${DOCKER_TAG} \
 --build-arg PYTHON3_OSM_COMMON_URL=localhost:8080/common.deb \
 --build-arg PYTHON3_N2VC_URL=localhost:8080/n2vc.deb \
 --build-arg PYTHON3_OSM_LCM_URL=localhost:8080/lcm.deb \
