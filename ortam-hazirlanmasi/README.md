@@ -4,7 +4,7 @@
 
 OSM ortamında geliştirme çalışmaları yapılabilmesi için kullanılacak modül için Python sanal ortamın hazırlanması (venv) ve Python paketlerin kurulması Pycharm IDE ve IDE bağımsız olarak iki farklı şekilde bütün adımlar bu sayfada bahsedilmektedir.
 
-OSM Python3 versiyonu kullanılmaktadır. Specific olarak Python3.8 kullanılabilir.
+OSM Python3 versiyonu kullanılmaktadır. Python3.8 kullanılabilir.
 ```bash
 # Python version kontrolü
 python3 -V
@@ -22,13 +22,13 @@ Modül bazlı çalışma gerçekleştirirken her modülün kullandığı paketle
 sudo apt install python3-venv
 # Sanal ortamın oluşturulması için gerekli komut
 python3 -m venv <hedef-klasör-ismi>
-python3 -m venv <modül-klasör-ismi>/venv
+python3 -m venv venv
 # 2. Yöntem
 # virtualenv apt paketi kurulumu
 sudo apt install virtualenv
 # Komut sonrasında 
 virtualenv <hedef-klasör-ismi> -p/--python <python-exe>
-virtualenv <modül-klasör-ismi>/venv -p python3
+virtualenv venv -p python3
 ```
 
 Sanal ortam mutlaka modül içerisinde oluşturulmalıdır.
