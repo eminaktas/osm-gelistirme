@@ -34,8 +34,8 @@ Burada örnek olarak LCM modülünde yaptığınız bir değişiklik için kolay
 ```bash
 ssh <user>:<host> 'mkdir -p ~/osm-modules/LCM'
 # `!(venv)` ile venv klasörü kopyalanmaz.
-scp -rp LCM/!(venv) <user>:<host>:/home/ubuntu/osm-modules/LCM
-scp -rp LCM/.git* <>:<>:~/osm-modules/LCM
+scp -rp LCM/!(venv) <user>@<host>:/home/ubuntu/osm-modules/LCM
+scp -rp LCM/.git* <>@<>:~/osm-modules/LCM
 ```
 
 Güncel Docker yansıları devops modülünde bulunmaktadır.

@@ -94,8 +94,8 @@ Bu kısımdaki işlemleri gerçekleştirirken paketlerin kurulumu sırasında co
 Komutları bu dosya dizininden ve sanal ortamımız aktif şekilde yapıyoruz.
 
 ```bash
-pip install -m -e N2VC
-pip install -m -e common
+python3 -m pip install -e N2VC
+python3 -m pip install -e common
 ```
 
 Böylelikle LCM modülü için tüm paket kurulumları tamamlandı.
