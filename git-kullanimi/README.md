@@ -92,7 +92,7 @@ Bu işlemi gerçekleştirme sırasında yaptığımız değişiklerle alakalı b
 Bu adımlar tamamlandıktan sonra artık kod gönderilmeye hazırdır.
 ```bash
 # Bu şekilde yapılan değişiklikler uzak repodaki master branche gönderilebilir.
-git push origin HEAD:refs/heads/master
+git push origin HEAD:refs/for/master
 ```
 
 Daha sonrasında yapılan commit güncellenmek istenilirse aşağıdaki adımlar gerçekleştirilebilir.
