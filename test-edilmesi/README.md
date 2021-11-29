@@ -97,7 +97,8 @@ docker run -it --rm -v `pwd`:/package-build-folder -w /package-build-folder --en
 Her modül içerisinde `devops-stages` klasörü bulunmaktadır. Buradan `stage-build.sh` kullanılarak paketler oluşturulur.
 
 ```bash
-# deb paketi hazırlar. Her modül için yani LCM örneğinde common, N2VC içinde bu işlemler tekrarlanması gerekmektedir.
+# deb paketleri hazırlanır. Bu örnekte LCM yansısı oluşturulacağı için LCM ile birlikte common ve N2VC paketleri hazırlanması gerekmektedir.
+mkdir deb-packages
 # LCM
 pushd LCM && ./devops-stages/stage-build.sh && cp deb_dist/*.deb ../deb-packages/lcm.deb && popd
 # N2VC
@@ -112,7 +113,7 @@ tmux ls
 tmux kill-session -t <id>
 ```
 
-LCM modülünün Docker yanısının tekrar inşa etmek için tüm gerekli paketler hazır durumdadır. Şimdi LCM modülünün yukarıda eklenen kısmı için gerekli bilgileri vererek yanının inşa edilmesini başlatabiliriz.
+LCM modülünün Docker yansısının tekrar inşa etmek için tüm gerekli paketler hazır durumdadır. Şimdi LCM modülünün yukarıda eklenen kısmı için gerekli bilgileri vererek yanının inşa edilmesini başlatabiliriz.
 
 ```bash
 # LCM modülünün yeni imajının kurulumu aşağıdaki komut ile gerçekleştirilir.
